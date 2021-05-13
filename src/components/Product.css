@@ -1,0 +1,89 @@
+.product__container{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.product__image{
+    display: flex;    
+    width: 79%;
+    align-items: center;
+    height: 300px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+
+}
+
+.product__image img{
+    width: 75%;
+    margin-left: 25px;
+    height: 90%;
+    transition:all .4s ease;
+    overflow: hidden;
+}
+
+
+.product__image img:hover{
+    transform:rotate(-15deg)
+}
+.product__name{
+    width: 79%;
+    height: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.product__name > h1{
+    font-size: 16px;
+    margin-top: 2px;
+    font-weight: 200;
+}
+.product__price{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.product__price .product__discount{
+    margin-left: 6px;
+    color: silver;
+    font-weight: 600;
+}
+
+@media (max-width : 800px) {
+    .product__container{
+        width: 100%;
+        padding: 0 30px;
+        margin-bottom: 10px;
+    
+    }
+    .product__image{
+        display: flex;    
+        width: 79%;
+        align-items: center;
+        height: 350px;
+        background-color: #f0f0f0;
+        overflow: hidden;
+    }
+    
+    .product__image img{
+        width: 70%;
+        margin-left: 58px;
+        height: 70%;
+        transition:all .4s ease;
+        overflow: hidden;
+    }
+    
+    
+    .product__image img:hover{
+        transform:rotate(-15deg)
+    }
+}
+
+@media(max-width : 400px){
+    .product__container{
+        width: 100%;
+        padding: 0 30px;
+        margin-bottom: 10px;
+    
+    }
+}

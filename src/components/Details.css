@@ -1,0 +1,139 @@
+.product__details{
+    display: flex;
+    width: 1100px;
+    height: auto;
+    margin: 10%;
+}
+
+:root{
+   --main : #ff6e68;
+   --white : #fff;
+}
+
+.product__details__image{
+    margin: 10px;
+}
+
+.product__details__image > img{
+    width: 250px;
+}
+
+.product__details__info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.details__name{
+    display: flex;
+    font-weight: 900;    
+    font-size: 18px;
+}
+
+.details__price{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.details__price__actual{
+    font-size: 20px;    
+    text-decoration: line-through;
+}
+
+.details__price__discount{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.deatils__basket{
+    display: flex;
+    width: 80%;
+    margin-top:10px;
+}
+
+.range__items {
+    width: 100%;
+    display: flex;
+    height: 40px;
+}
+
+span{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid silver;
+    font-size: 20px;
+    border-radius: none;
+}
+
+.decrement,
+.increment{
+    cursor: pointer;
+}
+
+.quantity{
+    border-left: none;
+    border-right: none;
+}
+
+.add__to__cart{
+    width: 100%;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--main);
+    color: var(--white);
+    text-transform: uppercase;
+}
+.product__description{
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.head__name{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.description{
+    font-size: 13px;
+}
+
+@media(max-width: 800px){
+    .product__details{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+    }
+    .product__details__image{
+        margin-top: 10%;
+        width: 100%;
+    }
+    .product__details__image > img{
+        width: 50%;
+    }
+}
+
+@media(max-width: 400px){
+    .product__details{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+    }
+    .product__details__image{
+        margin-top: 10%;
+        width: 100%;
+    }
+    .product__details__image > img{
+        width: 50%;
+    }
+}

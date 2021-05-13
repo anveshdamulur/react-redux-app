@@ -1,0 +1,49 @@
+:root{
+    --white : #fff;
+    --black : #000;
+    --main : #ff6e68;
+    --lightblack : #2c2c2c;
+}
+
+.navbar{
+    width: 100%;
+    box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background: var(--white);
+}
+.navbar__container{
+    width: 1300px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar__left img{
+    width: 100px;
+    height: 50px;
+}
+.cart__basket__icon{
+    color: var(--main);
+    font-size: 25px;
+}
+.basket{
+    position: relative;
+}
+.basket span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -16px;
+    top: -9px;
+    height: 30px;
+    width: 30px;
+    background: var(--lightblack);
+    border-radius:50% ;
+    color:var(--white);
+    font-size: 15px;
+}
