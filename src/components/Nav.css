@@ -47,3 +47,52 @@
     color:var(--white);
     font-size: 15px;
 }
+
+@media(max-width:800px){
+    .navbar{
+        width: 100%;
+        box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
+        height: 100px;
+        position: fixed;
+        top: 0;
+        background: var(--white);
+        display: flex;
+    }
+    .navbar__left img{
+        width: 100px;
+        height: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .navbar__container{
+        width: 800px;
+        border: 2px solid red;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;       
+    }
+    .cart__basket__icon{
+        color: var(--main);
+        font-size: 25px;
+    }
+    .basket{
+        position: relative;
+    }
+    .basket span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: -16px;
+        top: -9px;
+        height: 30px;
+        width: 30px;
+        background: var(--lightblack);
+        border-radius:50% ;
+        color:var(--white);
+        font-size: 15px;
+    }
+}

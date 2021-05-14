@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {useParams} from  "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import Currency from 'react-currency-formatter';
-
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import "./Details.css"
 const Details = () => {
 
@@ -51,13 +51,13 @@ const Details = () => {
                 </div>
                 <div className="deatils__basket">
                     <div className="range__items">
-                        <span className="decrement" onClick={decrement}>
-                               -
-                        </span>
-                        <span className="quantity">{count}</span>
-                        <span className="increment" onClick={()=>setCount(count+1)}>
-                           +
-                        </span>
+                        <div className="decrement" onClick={decrement}>
+                              <AiOutlineMinus />
+                        </div>
+                        <div className="quantity">{count}</div>
+                        <div className="increment" onClick={()=>setCount(count+1)}>
+                        <AiOutlinePlus/>
+                        </div>
                        <button className="add__to__cart" onClick={()=>dispatch({type : "ADD_TO_CART", payload : {product, count}})}>Add to cart</button>
                     </div>
                 </div>
