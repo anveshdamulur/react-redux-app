@@ -110,7 +110,7 @@
     font-size: 13px;
 }
 
-@media(max-width: 800px){
+/* @media(max-width: 800px){
     .product__details{
         width: 98%;
         display: flex;
@@ -138,4 +138,4 @@
     .product__details__image > img{
         width: 50%;
     }
-}
+} */

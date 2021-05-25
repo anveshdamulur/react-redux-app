@@ -1,4 +1,5 @@
 {
+  "homepage": "http://anveshdamulur.github.io/react__redux__ecommerce__website",
   "name": "redux-shopping-app",
   "version": "0.1.0",
   "private": true,
@@ -18,6 +19,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy" : "npm run deploy",
+    "deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
