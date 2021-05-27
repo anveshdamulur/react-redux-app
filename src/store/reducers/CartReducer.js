@@ -1,6 +1,6 @@
 const initState ={
-    products:[],
-    totalPrice :0,
+    products : [],
+    totalPrice : 0,
     totalQuantities : 0
 }
 

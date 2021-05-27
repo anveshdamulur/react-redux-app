@@ -7,11 +7,9 @@ import Currency from 'react-currency-formatter';
 import "./Cart.css"
 const Cart = () => {
     const {products, totalQuantities, totalPrice} = useSelector(state => state.CartReducer);
-    // const [count, setCount] = useState(1);
-     const dispatch = useDispatch()
-     console.log(products);
+    const dispatch = useDispatch()
+    console.log(products);
     return (
-      
         <div className="cart">   
             <div className="cart_heading">
                 <h3>Your items :</h3>
@@ -102,11 +100,8 @@ const Cart = () => {
                     </div>
                 </div>
                 :
-               
-                 "Your Cart is Empty"
+                "Your Cart is Empty"
             }
-            
-           
         </div>
     )
 }
